@@ -17,7 +17,7 @@ const ProfilePage = () => {
             <Card className='max-w-96 mx-auto flex flex-col items-center border my-5'>
                 <Avatar className='h-20 w-20'>
                     <Avatar.Image alt={user?.name} src={user?.image} referrerPolicy="no-referrer" />
-                    <Avatar.Fallback>{user?.name[0]}</Avatar.Fallback>
+                    <Avatar.Fallback>{user?.name?.[0]}</Avatar.Fallback>
                 </Avatar>
 
                 <h2 className='text-xl font-bold'>{user?.name}</h2>
