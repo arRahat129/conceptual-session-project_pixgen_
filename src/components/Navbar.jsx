@@ -67,6 +67,11 @@ const Navbar = () => {
                                 <Avatar.Fallback>{user?.name[0]}</Avatar.Fallback>
                             </Avatar>
 
+                            <div className="flex flex-col">
+                                <h1 className="font-semibold">{user.name}</h1>
+                                <p className="font-medium text-xs">{user.email}</p>
+                            </div>
+
                             <Button onClick={handleSignOut} size="sm" variant="danger">Sign Out</Button>
                         </div>
                     }
